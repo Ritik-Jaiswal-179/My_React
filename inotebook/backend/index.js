@@ -8,9 +8,9 @@ app.use(express.json())
 connectToMongo()
 
 // Available routes
-// app.get("/",(req,res)=>{
-//     res.send("hello ")
-// })
+app.get("/",(req,res)=>{
+    res.send("hello ")
+})
 app.use('/api/auth',require('./routes/auth'))
 app.use('/api/notes',require('./routes/notes'))
 
